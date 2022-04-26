@@ -4,7 +4,7 @@
 #
 Name     : pypi-resolvelib
 Version  : 0.8.1
-Release  : 9
+Release  : 10
 URL      : https://files.pythonhosted.org/packages/ac/20/9541749d77aebf66dd92e2b803f38a50e3a5c76e7876f45eb2b37e758d82/resolvelib-0.8.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/ac/20/9541749d77aebf66dd92e2b803f38a50e3a5c76e7876f45eb2b37e758d82/resolvelib-0.8.1.tar.gz
 Summary  : Resolve abstract dependencies into concrete ones
@@ -14,9 +14,6 @@ Requires: pypi-resolvelib-license = %{version}-%{release}
 Requires: pypi-resolvelib-python = %{version}-%{release}
 Requires: pypi-resolvelib-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-Provides: resolvelib
-Provides: resolvelib-python
-Provides: resolvelib-python3
 BuildRequires : pypi(setuptools)
 BuildRequires : pypi(wheel)
 
@@ -64,7 +61,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1641489731
+export SOURCE_DATE_EPOCH=1651016335
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
